@@ -3,9 +3,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export const config = {
-  runtime: 'experimental-edge',
-};
+export const runtime = "experimental-edge";
 
 export default async function handler(req) {
   if (req.method !== 'POST') {
